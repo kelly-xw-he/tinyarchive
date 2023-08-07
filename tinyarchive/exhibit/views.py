@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from archive.models import ArchiveDocument, AssociatedImage
 from .models import Exhibit
 
+#hello
 
 def exhibit_index(request):
     context = {}
