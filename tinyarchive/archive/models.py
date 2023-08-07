@@ -24,6 +24,11 @@ class ArchiveDocument(models.Model):
         blank = True,
     )
 
+class Book(models.Model):
+    series = models.CharField(max_length=200)
+    name_of_book = models.CharField(max_length=200)
+    author = models.CharField(max_length=200)
+
 
 class AssociatedImage(models.Model):
 
@@ -79,3 +84,13 @@ class Document(ArchiveDocument):
     # and codes?
     language = models.CharField(max_length=200)
     transcription = models.TextField(blank=True, null=False)
+
+class Book(models.Model):
+    series = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
+    author = models.CharField(max_length=200)
+    publishing_date = models.CharField(max_length=200)
+    page_number = models.CharField(max_length=200)
+    ratings = models.CharField(max_length=200)
+    genre = models.CharField(max_length=200)
+    awards = models.CharField(max_length=1000)
