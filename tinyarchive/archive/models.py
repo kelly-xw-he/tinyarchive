@@ -85,7 +85,7 @@ class Document(ArchiveDocument):
     language = models.CharField(max_length=200)
     transcription = models.TextField(blank=True, null=False)
 
-class Book(models.Model):
+class Book(ArchiveDocument):
     series = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
