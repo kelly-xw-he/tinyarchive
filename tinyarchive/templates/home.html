@@ -1,36 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
 
-<p></p>
-<body>
+{% block content %}
 <div class="border-container">
-<p></p>
-<p></p>
-<div class="page_title">
-    <h1 class = 'rounded-border'> Childhood Reads of the Early 21st Century </h1>
- </div>
- <div class="intro">
-     <h2, , class = 'move-right'>Welcome to the archive that showcases the Childhood Reads in the Early 21st Century!
-         Hope you enjoy! </h2>
- </div>
- <ul>
-     <li class = 'move-right'><a href="archive/">Archives</a> </li>
-     <li class = 'move-right'> <a href="exhibit/"> Exhibits </a></li>
-     <li class = 'move-right'> <a href= aboutus.html> About Us</a> </li>
- </ul>
-     <p class = 'move-right'> Please click on the archive, exhibit, and about us to learn more! </p>
-     <p class = 'move-right'> These books were picked by the authors of the webpage. We believe these books were some of children's favorites during the 
-         times we grew up. 
-     </p>
-     <p class = 'move-right'> The content that children are exposed to has a strong influence on what they grow up to be. As a team, 
-        we are interested in this phenomenon on a generation-wide scale. </p>
-    <h2 class = 'move-right'> “The more that you read, the more things you will know. The more you learn, the more places you’ll go.” -- Dr. Suess</h2>
-     <div class="image-container" class = 'move-right'>
-         <p class = 'move-right'> <img src="/media/photographs/home.jpg" alt="Pic" class="same-size-image"> 
-            <img src="/media/photographs/home2.jpg" alt="Pic" class="same-size-image"> 
-           <img src="/media/photographs/home3.jpg" alt="Pic" class="same-size-image"> </p>
-     </div>
+    <div class="page_title text-center">
+        <h1 class="rectangle-border">Childhood Reads of the Early 21st Century</h1>
     </div>
-</body>  
+    <ul class="navigation">
+        <li><a href="archive/">Archives</a></li>
+        <li><a href="exhibit/">Exhibits</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+    <div class="content">
+        <p class="paragraph">Welcome to our archive, a curated archive showcasing early 21st-century children's literature. Our aim: preserve, evoke nostalgia, and inspire research into the impactful books that shaped young minds of our era. From Harry Potter sparking personality discussions to enabling future studies on generational reading influences, our collection offers insight into our cultural and cognitive development. This archive invites all to relive the joy of these books, bridging the past for readers of all ages.</p>
+        <div class="image-container">
+            <img src="/media/photographs/home.jpg" alt="Pic" class="same-size-image">
+            <img src="/media/photographs/home2.jpg" alt="Pic" class="same-size-image">
+            <img src="/media/photographs/home3.jpg" alt="Pic" class="same-size-image">
+        </div>
+    </div>
+    <h2 class="quote">"The more that you read, the more things you will know. The more you learn, the more places you'll go." - Dr. Seuss</h2>
+
+</div>
 {% endblock %}
